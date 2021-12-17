@@ -8,17 +8,17 @@ mysqli_close($link);
 /////// قیمت های سکه ی طلا ///////
 /////////// به تومان ///////////
 ///////////////////////////////
-define("TALA_100","5,000");
-define("TALA_250","9,000");
-define("TALA_500","16,000");
-define("TALA_1200","28,000");
-define("TALA_3200","50,000");
+//define("TALA_100","5,000");
+//define("TALA_250","9,000");
+//define("TALA_500","16,000");
+//define("TALA_1200","28,000");
+//define("TALA_3200","50,000");
 
 //////////////////////////////////
 ///////// آیدی مدیر فروش ////////
 /////////// Yahoo!ID ///////////
 ///////////////////////////////
-define("SALES_ID","westehran");
+//define("SALES_ID","westehran");
 
 
 //////////////////////////////////
@@ -40,7 +40,7 @@ define("SERVER_NAME",$result['server_name']);
 
 // ***** Started
 // Defines when has server started.
-define("COMMENCE","1520543772");
+define("COMMENCE","1639753748");
 
 // ***** Language
 // Choose your server language.
@@ -203,8 +203,8 @@ define("MAX_MAIL","30");
 define("INCLUDE_ADMIN", false);
 
 // ***** Server Start Date / Time
-define("START_DATE", "03/08/2018");
-define("START_TIME", "21:15");
+define("START_DATE", "12/17/2021");
+define("START_TIME", "16:08");
 
 // ***** Register Open/Close
 define("REG_OPEN", true);
@@ -228,7 +228,7 @@ define("LIMIT_TROOPS",false);
 define("ADMIN_EMAIL", $result['admin_email']);
 
 // ***** Admin Name
-define("ADMIN_NAME", "fred");
+define("ADMIN_NAME", "admin");
 
 
 

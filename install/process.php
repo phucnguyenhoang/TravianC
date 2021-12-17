@@ -4,6 +4,7 @@ ini_set('display_errors', 0);
 error_reporting(E_ALL);
 
 date_default_timezone_set('Europe/Berlin');
+// date_default_timezone_set('UTC');
         if(file_exists("include/constant.php") && file_exists("include/connection.php")) {
         	include ("include/database.php");
         }

@@ -35,6 +35,7 @@
 <div id="side_navi">
 <ul>
 
+<?php date_default_timezone_set('Europe/Berlin'); ?>
 <?php include("templates/menu.tpl"); ?>
 </ul>
 </div>

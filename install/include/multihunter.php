@@ -6,7 +6,7 @@ include("../../GameEngine/Lang/" . LANG . ".php");
 
 $link = mysqli_connect(SQL_SERVER, SQL_USER, SQL_PASS, SQL_DB);
 
-$StartNatars = true;
+$StartNatars = false;
 /**
  * Functions
  */

@@ -56,7 +56,7 @@ echo "<div class=\"headline\"><span class=\"f10 c5\">Error creating constant.php
 		</tr>      
     	<tr class="hover">
 			<td>Home Page:</td>
-			<td><input name="homepage" dir="ltr" class="text" type="text" id="homepage" value="http://<?php echo $_SERVER['HTTP_HOST']; ?>/"></td>
+			<td><input name="homepage" dir="ltr" class="text" type="text" id="homepage" value="http://<?php echo $_SERVER['HTTP_HOST']; ?>/index.php"></td>
 		</tr>
     	<tr class="hover">
 			<td>Language:</td>
@@ -153,19 +153,19 @@ echo "<div class=\"headline\"><span class=\"f10 c5\">Error creating constant.php
 <table cellpadding="1" cellspacing="1" id="top10_defs" class="top10 row_table_data">
     	<tr class="hover">
 			<td>Hostname:</td>
-			<td><input name="sserver" dir="ltr" class="text" type="text" id="sserver" value="localhost"></td>
+			<td><input name="sserver" dir="ltr" class="text" type="text" id="sserver" value="db"></td>
 		</tr>
     	<tr class="hover">
 			<td>Username:</td>
-			<td><input name="suser" dir="ltr" class="text" type="text" id="suser" value=""></td>
+			<td><input name="suser" dir="ltr" class="text" type="text" id="suser" value="root"></td>
 		</tr>
     	<tr class="hover">
 			<td>Password:</td>
-			<td><input type="text" dir="ltr" class="text" name="spass" id="spass"></td>
+			<td><input type="text" dir="ltr" class="text" name="spass" id="spass" value="root"></td>
 		</tr>
     	<tr class="hover">
 			<td>DB name:</td>
-			<td><input type="text" dir="ltr" class="text" name="sdb" id="sdb"></td>
+			<td><input type="text" dir="ltr" class="text" name="sdb" id="sdb" value="creature_wars_com"></td>
 		</tr>
     	<tr class="hover">
 			<td>Prefix:</td>
@@ -181,11 +181,11 @@ echo "<div class=\"headline\"><span class=\"f10 c5\">Error creating constant.php
         <tr class="empty"><td></td><td></td></tr>
     	<tr class="hover">
 			<td>Admin Name:</td>
-			<td><input type="text" dir="ltr" class="text" name="aname" id="aname"></td>
+			<td><input type="text" dir="ltr" class="text" name="aname" id="aname" value="admin"></td>
 		</tr>
     	<tr class="hover">
 			<td>Admin Email:</td>
-			<td><input name="aemail" dir="ltr" class="text" type="text" id="aemail"></td>
+			<td><input name="aemail" dir="ltr" class="text" type="text" id="aemail" value="admin@gmail.com"></td>
 		</tr>
     	<tr class="hover">
 			<td>Show Admin Rank:</td>
