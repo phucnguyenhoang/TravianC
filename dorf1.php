@@ -3,6 +3,7 @@ ini_set('display_errors',0);
 error_reporting(E_ALL);
 include("GameEngine/Village.php");
 $start = $generator->pageLoadTimeStart();
+// var_dump($_GET);die;
 if(isset($_GET['ok'])){
     $database->updateUserField($session->username,'ok','0','0'); $_SESSION['ok'] = '0'; }
 if(isset($_GET['newdid'])) {

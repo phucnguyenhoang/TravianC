@@ -1,9 +1,11 @@
 <?php
-
+global $database;
 include("database.php");
+include("constant.php");
 
 
 $xyas=(1+(2*WORLD_MAX));
+// var_dump(WORLD_MAX, $xyas);die;
 
 for($i=0; $i<$xyas; $i++){
 	$y=(WORLD_MAX-$i);
@@ -100,10 +102,13 @@ for($i=0; $i<$xyas; $i++){
 		}
 		
 		//into database
-		$q = "INSERT into ".TB_PREFIX."wdata values (0,'".$typ."','".$otype."','".$x."','".$y."',0,'".$image."')";
+		$q = "INSERT into ".TB_PREFIX."wdata(`fieldtype`, `oasistype`, `x`,`y`,`occupied`,`image`) values ('".$typ."','".$otype."','".$x."','".$y."',0,'".$image."')";
+		// var_dump($q);
+		// mysqli_query($database->connection, $q);
 		$database->query($q);
 	}
 }
+// die;
 		header("Location: ../index.php?s=4");
 
 ?>

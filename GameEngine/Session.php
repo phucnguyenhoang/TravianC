@@ -27,7 +27,8 @@ include ("Alliance.php");
 include ("Profile.php");
 include ("Protection.php");
 
-
+ini_set('display_errors', 0);
+error_reporting(E_ALL);
 class Session {
 
     private $time;

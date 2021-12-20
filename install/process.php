@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 date_default_timezone_set('Europe/Berlin');
 // date_default_timezone_set('UTC');
         if(file_exists("include/constant.php") && file_exists("include/connection.php")) {
-        	include ("include/database.php");
+        	//include ("include/database.php");
         }
         class Process {
 
@@ -29,6 +29,7 @@ date_default_timezone_set('Europe/Berlin');
 
         	function constForm() {
 				global $database;
+				// var_dump($_POST);die;
         		$myFile = "include/constant.php";
         		$fh = fopen($myFile, 'w') or die("<br/><br/><br/>Can't open file: install\include\constant.php");
         		$text = file_get_contents("data/constant_format.tpl");
@@ -72,6 +73,7 @@ date_default_timezone_set('Europe/Berlin');
 				
         		if(file_exists("include/constant.php") && file_exists("include/connection.php")) {
 					include 'include/database.php';
+					include("include/constant.php");
 					$str = file_get_contents("data/config.sql");
         			$str = preg_replace("'%PREFIX%'", TB_PREFIX, $str);
 					if(DB_TYPE === 2) {
@@ -91,6 +93,7 @@ date_default_timezone_set('Europe/Berlin');
 
         	function createStruc() {
         		global $database;
+				include 'include/database.php';
         		$str = file_get_contents("data/sql.sql");
         		$str = preg_replace("'%PREFIX%'", TB_PREFIX, $str);
         		if(DB_TYPE == 2) {

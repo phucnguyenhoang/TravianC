@@ -5,6 +5,7 @@ include("Session.php");
 class Account {
 	function Account() {
 		global $session;
+		// var_dump($_POST);die;
 		if(isset($_POST['ft'])) {
 			switch($_POST['ft']) {
 				case "a1":
@@ -87,6 +88,7 @@ class Account {
 			
 			header("Location: anmelden.php");
 		} else {
+			// var_dump(AUTH_EMAIL);die;
 			if(AUTH_EMAIL){
 				$act = $generator->generateRandStr(10);
 				$act2 = $generator->generateRandStr(5);
@@ -97,6 +99,7 @@ class Account {
 					header("Location: activate.php?id=$uid&q=$act2");
 				}
 			} else {
+				// todo here
 				$uid = $database->register($_POST['name'],md5($_POST['pw']),$_POST['email'],$_POST['vid'],$_POST['kid'],$act);
 				$frandom0 = rand(0,3);$frandom1 = rand(0,3);$frandom2 = rand(0,4);$frandom3 = rand(0,3);
 				
@@ -253,6 +256,7 @@ class Account {
 		}
 		
 		$wid = $database->generateBase($kid);
+		// var_dump($wid);die;
 		$database->setFieldTaken($wid);
 		$database->addVillage($wid,$uid,$username,1);
 		$database->addResourceFields($wid,$database->getVillageType($wid));

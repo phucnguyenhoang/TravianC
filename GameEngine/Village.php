@@ -28,12 +28,14 @@ class Village {
 
 	function Village() {
 		global $session;
+		// var_dump($_SESSION);
 		if(isset($_SESSION['wid'])) {
 			$this->wid = $_SESSION['wid'];
 		}
 		else {
 			$this->wid = $session->villages[0];
 		}
+		// var_dump($this->wid);die;
 		$this->LoadTown();
 		$this->calculateProduction();
 		$this->processProduction();

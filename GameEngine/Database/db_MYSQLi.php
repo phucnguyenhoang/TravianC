@@ -354,6 +354,7 @@
         	//Choice placement where sector
 			function generateBase($sector){
 				$sector = ($sector == 0) ? rand(1, 4) : $sector;
+				// var_dump($sector);
 				// (-/-) SW
 				if($sector == 1){
 					$x_a = (WORLD_MAX - (WORLD_MAX*2));
@@ -395,7 +396,7 @@
 					$x_y = "AND x > 4 AND y < $mmm";
 				}
 				$q = "SELECT * FROM ".TB_PREFIX."wdata where fieldtype = 3 and occupied = 0 $x_y and (x BETWEEN $x_a AND $x_b) and (y BETWEEN $y_a AND $y_b) $order LIMIT 20";
-				
+				// var_dump($q);die;
 				$result = mysqli_query($this->connection, $q);
         		$dbarray = mysqli_fetch_array($result);
         		return $dbarray['id'];

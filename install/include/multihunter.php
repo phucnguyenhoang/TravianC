@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 0);
+error_reporting(E_ALL);
+
 include("../../GameEngine/Database.php");
 include("../../GameEngine/Admin/database.php");
 include("../../GameEngine/config.php");

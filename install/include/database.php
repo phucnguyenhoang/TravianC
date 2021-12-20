@@ -1,8 +1,8 @@
 <?php
 
-//set_time_limit(0);
+set_time_limit(0);
 include("connection.php");
-//include("constant.php");
+// include("constant.php");
 
 class MYSQLI_DB {
 	
