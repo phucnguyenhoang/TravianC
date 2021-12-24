@@ -40,7 +40,7 @@ define("SERVER_NAME",$result['server_name']);
 
 // ***** Started
 // Defines when has server started.
-define("COMMENCE","1639993947");
+define("COMMENCE","1640148849");
 
 // ***** Language
 // Choose your server language.
@@ -203,8 +203,8 @@ define("MAX_MAIL","30");
 define("INCLUDE_ADMIN", false);
 
 // ***** Server Start Date / Time
-define("START_DATE", "12/20/2021");
-define("START_TIME", "10:52");
+define("START_DATE", "12/22/2021");
+define("START_TIME", "05:53");
 
 // ***** Register Open/Close
 define("REG_OPEN", true);

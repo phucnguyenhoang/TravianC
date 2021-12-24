@@ -2,7 +2,9 @@ version: '3.8'
 services:
   php-apache-enironment:
     container_name: php-apache
-    image: php:5.3-apache
+    build:
+      context: .
+      dockerfile: Dockerfile
     depends_on:
       - db
     volumes:
@@ -21,10 +23,11 @@ services:
       TB_PREFIX: s1_
     ports:
       - 9906:3306
+    command: ['mysqld', '--character-set-server=utf8', '--collation-server=utf8_unicode_ci']
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports: 
-      - 8080:80
+      - 8081:80
     restart: always
     environment:
       PMA_HOST: db
